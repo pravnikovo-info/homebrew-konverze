@@ -8,10 +8,16 @@ brew tap pravnikovo-info/konverze
 brew install --cask konverze
 ```
 
+Novější Homebrew má bezpečnostní bránu pro cizí tapy — pokud odmítne
+„untrusted tap", spusťte jednou:
+```bash
+brew trust pravnikovo-info/konverze
+```
+
 Po instalaci macOS binárku jednou odblokujte (není placeně podepsaná):
 ```bash
 xattr -dr com.apple.quarantine "$(brew --prefix)/bin/konverze"
 ```
 
 Cask (`Casks/konverze.rb`) obsahuje jen metadata — verzi, URL na veřejný download
-a SHA-256. Aktualizuje se automaticky při každém vydání (`release.sh` v hlavním repu).
+a SHA-256. Aktualizuje se automaticky při každém vydání.
