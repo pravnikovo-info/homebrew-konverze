@@ -1,6 +1,6 @@
 cask "konverze" do
-  version "0.7.83"
-  sha256 "b6d01cebe2d444b933523c5bf1d38ed444000ddf84339f70c3f52178e6eb49e1"
+  version "0.7.84"
+  sha256 "98b48621fe388e80b346873375ec8a63146578ba7b7bc6a3881f9736a5e1252e"
 
   url "https://konverze.pravnikovo.info/konverze-v#{version}-macos-x64.zip"
   name "Konverze"
